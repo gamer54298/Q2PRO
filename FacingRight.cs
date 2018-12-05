@@ -14,6 +14,14 @@ public class NewBehaviourScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        if (facingRight == false && moveInput > 0)
+        {
+            Flip();
+        }else if(facingRight == false && moveInput < 0) 
+        {
+            Flip();
+        }
 		
 	}
     void Flip ()
